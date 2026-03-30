@@ -9,25 +9,29 @@ int main() {
     
     switch (opcao){
       case 1:
-          printf("1 - Fahrenheit para Celsius\n2 - Celsius para Fahrenheit\n");
+          printf("0 - Fahrenheit para Celsius\n1 - Celsius para Fahrenheit\n");
           scanf("%d", &tipoconversao);
-          if (tipoconversao == 0) {
+          if (tipoconversao == 1) {
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
             float valor1 = 0;
             valor1 = ((valor - 32) * 5) / 9;
             printf("O valor em celsius %.2f é em fahrenheit %.2f", valor, valor1);
           }
-          else {
+          else if (tipoconversao == 0){
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
             float valor1 = 0;
             valor1 = (valor * 1.8) + 32;
             printf("O valor em fahrenheit %.2f é em celsius %.2f", valor, valor1);
           }
+          else{
+            printf("Escolha invalida\n");  
+          }
           break;
       case 2:
-          printf("1 - Dolar US$\n2- Real R$\n");
+          printf("0 - Dolar US$\n1 - Real R$\n");
+          scanf("%d", &tipoconversao);
           if (tipoconversao == 1) {
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
@@ -35,16 +39,20 @@ int main() {
             valor1 = valor * 5.23;
             printf("O valor em dolar U$ %.2f é em real R$ %.2f", valor, valor1);
           }
-          else {
+          else if(tipoconversao == 0) {
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
             float valor1 = 0;
             valor1 = valor / 5.23;
             printf("O valor em real R$ %.2f é em dolar U$ %.2f", valor, valor1);
           }
+          else {
+            printf("Escolha invalida\n");   
+          }
           break;
       case 3:
-          printf("1 - KM\n2- Milhas\n");
+          printf("0 - KM\n1 - Milhas\n");
+          scanf("%d", &tipoconversao);
           if (tipoconversao == 1) {
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
@@ -52,12 +60,15 @@ int main() {
             valor1 = valor * 1.852;
             printf("O valor em KM %.2f é em milhas %.2f", valor, valor1);
           }
-          else{
+          else if (tipoconversao == 0){
             printf("informe o valor para conversão:\n");
             scanf("%f", &valor);
             float valor1 = 0;
             valor1 = valor / 1.852;
             printf("O valor em milhas %.2f é em KM %.2f", valor, valor1);
+          }
+          else {
+            printf("Escolha invalida\n");   
           }
           break;
       default:
