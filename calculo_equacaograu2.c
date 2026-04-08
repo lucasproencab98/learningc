@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h> 
+#include <math.h> //biblioteca para usar operações matematicas//
 
 int main() {
     float vara, varb, varc, delta;
