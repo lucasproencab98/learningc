@@ -26,7 +26,5 @@ int main() {
 	else{
 		printf("Voce não tem um triangulo\n");
 	}
-	
-	
-	
+	return 0;	
 }
