@@ -1,4 +1,4 @@
-# 🧠 Treinando Lógica de Programação em C
+# 🧠 Treinando Lógica de Programação em C - Utilizando livro Lógica de Programação (Forbellone)
 
 ## 📌 Sobre o Repositório
 Este repositório foi criado com o objetivo de desenvolver e aprimorar a **lógica de programação** utilizando a linguagem **C**.  
