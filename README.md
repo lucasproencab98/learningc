@@ -29,7 +29,7 @@ Aqui você encontrará exercícios, desafios e pequenos projetos que ajudam a fo
 - Estruturas de repetição (for, while, do while)
 - Vetores e matrizes
 - Funções
-- Ponteiros (nível intermediário/avançado)
+- Ponteiros 
 
 ---
 
