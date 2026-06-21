@@ -1,0 +1,6 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && if (!(Test-Path build)) { New-Item -ItemType Directory -Path build | Out-Null } ; gcc \"$fileName\" -o \"build\\$fileNameWithoutExt.exe\" ; if ($LASTEXITCODE -eq 0) { & \"build\\$fileNameWithoutExt.exe\" }"
+  }
+}
